@@ -81,27 +81,7 @@ div.ex2{
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-.button3 {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #ececec;
-  background-color: #a51919;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 4px #660000;
-}
-.button3:hover {background-color: #8e3e3e}
 
-.button3:active {
-  background-color: #8e3e3e;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 div.center {
   position: absolute;
   top: 40%;
@@ -157,13 +137,73 @@ ul {list-style-type: square;
 }  
 
 .box2 {
-  background-color: blue;
-  width: cover;
-  Height: 70px;
-  margin: -9px;
-  
+  background-color: #831a1a;
+  width: 200px; /* Fast bredde på boksen */
+  height: auto; /* Høyden tilpasser seg innholdet */
+  padding: 10px; /* Liten padding rundt knappene */
+  position: fixed; /* Fest boksen til skjermen */
+  top: 0; /* Plasser boksen på toppen av skjermen */
+  left: 0; /* Plasser boksen til venstre på skjermen */
+  display: flex; /* Flex-container */
+  flex-direction: column; /* Stabler knappene vertikalt */
+  gap: 10px; /* Avstand mellom knappene */
+  align-items: center; /* Sentraliserer knappene horisontalt i boksen */
+  box-sizing: border-box; /* Inkluderer padding og border i boksen */
 }
-.box2 {
-  display: flex; /* This sets up a flex container for the buttons */
-  gap: 30px; /* This adds a gap of 10px between the buttons */
+
+.button3 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px; /* Juster fontstørrelse etter behov */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ececec;
+  background-color: #a51919;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #660000;
+  width: 100%; /* Knappene fyller bredden på boksen */
+  box-sizing: border-box; /* Inkluderer padding og border i knappenes bredde */
+}
+
+.button3:hover {
+  background-color: #8e3e3e;
+}
+
+.button3:active {
+  background-color: #8e3e3e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media (max-width: 600px) {
+  .box2 {
+    width: 60%; /* Boksen fyller hele bredden på små skjermer */
+    max-width: 60%; /* Fjerner maksimal bredde */
+  }
+  .box3 {
+    width: 60%; /* Boksen fyller hele bredden på små skjermer */
+    max-width: 60%; /* Fjerner maksimal bredde */
+  }
+
+  .button3 {
+    font-size: 16px; /* Justerer skriftstørrelsen for mindre skjermer */
+    padding: 8px 15px; /* Justerer padding for mindre skjermer */
+  }
+}
+.box3 {
+  background-color: #831a1a;
+  width: 200px; /* Fast bredde på boksen */
+  height: auto; /* Høyden tilpasser seg innholdet */
+  padding: 10px; /* Liten padding rundt knappene */
+  position: absolute; /* Fest boksen til skjermen */
+  top: 0; /* Plasser boksen på toppen av skjermen */
+  right: 0; /* Plasser boksen til venstre på skjermen */
+  display: flex; /* Flex-container */
+  flex-direction: column; /* Stabler knappene vertikalt */
+  gap: 10px; /* Avstand mellom knappene */
+  align-items: center; /* Sentraliserer knappene horisontalt i boksen */
+  box-sizing: border-box; /* Inkluderer padding og border i boksen */
 }
