@@ -89,11 +89,11 @@ div.ex2{
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
+  color: #ececec;
   background-color: #a51919;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #660000;
+  box-shadow: 0 4px #660000;
 }
 .button3:hover {background-color: #8e3e3e}
 
@@ -118,7 +118,7 @@ div.center2 {
 }
 .box {
   background-color: Red;
-  width: 1520px;
+  width: cover;
   Height: 70px;
   margin: -9px;
   
@@ -149,4 +149,21 @@ ul {list-style-type: square;
   box-shadow: 0 2px 5px rgba(252, 249, 249, 0.1);
   grid-column: span 3;
   text-align: center;
+}
+.body2 {
+  background-image: url("Images/grass.jpg"); 
+  background-size: cover;
+   
+}  
+
+.box2 {
+  background-color: blue;
+  width: cover;
+  Height: 70px;
+  margin: -9px;
+  
+}
+.box2 {
+  display: flex; /* This sets up a flex container for the buttons */
+  gap: 30px; /* This adds a gap of 10px between the buttons */
 }
