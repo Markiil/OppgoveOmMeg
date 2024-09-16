@@ -246,6 +246,17 @@ ul {list-style-type: square;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.about-me-box2 {
+  position: absolute;
+  top: 75%; /* Samme høyde som bildet */
+  left: 0%; /* Plasserer boksen 50px til høyre for bildet */
+  transform: translateY(-50%); /* Justerer boksen vertikalt */
+  width: 300px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .about-me-box ul {
   list-style-type: square;
@@ -265,7 +276,7 @@ ul {list-style-type: square;
     height: auto;              /* Automatisk høyde for innhold */
   }
 
-  .custom-image, .custom-image2, .about-me-box {
+  .custom-image, .custom-image2, .about-me-box,.about-me-box2 {
     max-width: 60%;            /* Bildet og tekstboksen tar nesten hele skjermbredden på mobil */
     margin-bottom: 20px;       /* Liten avstand mellom elementene */
   }
