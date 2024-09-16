@@ -179,12 +179,8 @@ ul {list-style-type: square;
 }
 
 @media (max-width: 600px) {
-  .box2 {
-    width: 60%; /* Boksen fyller hele bredden på små skjermer */
-    max-width: 60%; /* Fjerner maksimal bredde */
-  }
-  .box3 {
-    width: 60%; /* Boksen fyller hele bredden på små skjermer */
+  .box2,.box3,.box4 {
+    width: 60%; /* Boksen fyller bredden på små skjermer */
     max-width: 60%; /* Fjerner maksimal bredde */
   }
 
@@ -206,4 +202,71 @@ ul {list-style-type: square;
   gap: 10px; /* Avstand mellom knappene */
   align-items: center; /* Sentraliserer knappene horisontalt i boksen */
   box-sizing: border-box; /* Inkluderer padding og border i boksen */
+}
+.box4 {
+
+  width: 200px; /* Fast bredde på boksen */
+  height: auto; /* Høyden tilpasser seg innholdet */
+  padding: 10px; /* Liten padding rundt knappene */
+  position: absolute; /* Fest boksen til skjermen */
+  top: 0; /* Plasser boksen på toppen av skjermen */
+  right: 0; /* Plasser boksen til venstre på skjermen */
+  display: flex; /* Flex-container */
+  flex-direction: column; /* Stabler knappene vertikalt */
+  gap: 10px; /* Avstand mellom knappene */
+  align-items: center; /* Sentraliserer knappene horisontalt i boksen */
+  box-sizing: border-box; /* Inkluderer padding og border i boksen */
+}
+.custom-image {
+  position: absolute; /* Gjør bildet absolutt posisjonert */
+  top: 30%; /* Justerer bildet til litt over midten av skjermen */
+  left: 0; /* Plasserer bildet helt til venstre */
+  transform: translateY(-50%); /* Flytter bildet opp for å justere vertikalt */
+  width: 300px; /* Bildets bredde */
+  height: 300px; /* Bildets høyde */
+}
+.custom-image2 {
+  position: absolute; /* Gjør bildet absolutt posisjonert */
+  top: 75%; /* Justerer bildet til litt over midten av skjermen */
+  left: 50%; /* Plasserer bildet helt til venstre */
+  transform: translateY(-50%); /* Flytter bildet opp for å justere vertikalt */
+  width: 300px; /* Bildets bredde */
+  height: 300px; /* Bildets høyde */
+}
+
+.about-me-box {
+  position: absolute;
+  top: 30%; /* Samme høyde som bildet */
+  left: 50%; /* Plasserer boksen 50px til høyre for bildet */
+  transform: translateY(-50%); /* Justerer boksen vertikalt */
+  width: 300px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-me-box ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+.container {
+  position: relative; /* Gjør at elementene i containeren kan posisjoneres */
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;    /* Skifter fra rad til kolonne på mobil */
+    justify-content: center;   /* Sentraliserer elementene vertikalt */
+    align-items: center;
+    height: auto;              /* Automatisk høyde for innhold */
+  }
+
+  .custom-image, .custom-image2, .about-me-box {
+    max-width: 60%;            /* Bildet og tekstboksen tar nesten hele skjermbredden på mobil */
+    margin-bottom: 20px;       /* Liten avstand mellom elementene */
+  }
 }
