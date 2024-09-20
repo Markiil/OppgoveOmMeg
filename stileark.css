@@ -258,6 +258,18 @@ ul {list-style-type: square;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.Arbeid-på-Skulen {
+  position: absolute;
+  top: 30%; /* Samme høyde som bildet */
+  left: 0%; /* Plasserer boksen 50px til høyre for bildet */
+  transform: translateY(-50%); /* Justerer boksen vertikalt */
+  width: 300px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .about-me-box ul {
   list-style-type: square;
   padding-left: 20px;
@@ -279,5 +291,58 @@ ul {list-style-type: square;
   .custom-image, .custom-image2, .about-me-box,.about-me-box2 {
     max-width: 60%;            /* Bildet og tekstboksen tar nesten hele skjermbredden på mobil */
     margin-bottom: 20px;       /* Liten avstand mellom elementene */
+  }
+}
+/* Hovedstyling */
+.school-work-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Kortene (cards) */
+.subject-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Sentrerer kortene */
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #04AA6D; /* Bruk en farge som passer til temaet */
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 768px) {
+  .subject-cards {
+    flex-direction: column; /* På små skjermer blir kortene stablet vertikalt */
   }
 }
