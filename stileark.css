@@ -217,82 +217,64 @@ ul {list-style-type: square;
   align-items: center; /* Sentraliserer knappene horisontalt i boksen */
   box-sizing: border-box; /* Inkluderer padding og border i boksen */
 }
-.custom-image {
-  position: absolute; /* Gjør bildet absolutt posisjonert */
-  top: 30%; /* Justerer bildet til litt over midten av skjermen */
-  left: 0; /* Plasserer bildet helt til venstre */
-  transform: translateY(-50%); /* Flytter bildet opp for å justere vertikalt */
-  width: 300px; /* Bildets bredde */
-  height: 300px; /* Bildets høyde */
-}
-.custom-image2 {
-  position: absolute; /* Gjør bildet absolutt posisjonert */
-  top: 75%; /* Justerer bildet til litt over midten av skjermen */
-  left: 50%; /* Plasserer bildet helt til venstre */
-  transform: translateY(-50%); /* Flytter bildet opp for å justere vertikalt */
-  width: 300px; /* Bildets bredde */
-  height: 300px; /* Bildets høyde */
+/* Fjerner unødvendig plass og justerer innholdet bedre for store skjermer */
+.container {
+  display: flex;
+  align-items: center; /* Sentraliserer vertikalt */
+  justify-content: center; /* Justerer elementene mot midten */
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 1200px; /* Maks bredde for containeren */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.about-me-box {
-  position: absolute;
-  top: 30%; /* Samme høyde som bildet */
-  left: 50%; /* Plasserer boksen 50px til høyre for bildet */
-  transform: translateY(-50%); /* Justerer boksen vertikalt */
-  width: 300px;
-  padding: 20px;
+/* Tilpasser bilde og tekstboks */
+.custom-image, .custom-image2 {
+  width: 40%; /* Bildet tar opp 40% av containerens bredde */
+  height: auto;
+  object-fit: cover; /* Sørger for at bildet ikke blir strukket */
+  margin-right: 20px; /* Liten avstand til høyre av bildet */
+}
+
+.about-me-box, .about-me-box2 {
   background-color: #f1f1f1;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%; /* Tar opp 40% av containerens bredde */
+  max-width: 500px; /* Maks bredde for tekstboks */
 }
 
-.about-me-box2 {
-  position: absolute;
-  top: 75%; /* Samme høyde som bildet */
-  left: 0%; /* Plasserer boksen 50px til høyre for bildet */
-  transform: translateY(-50%); /* Justerer boksen vertikalt */
-  width: 300px;
-  padding: 20px;
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.about-me-box h2, .about-me-box2 h2 {
+  margin-top: 0;
 }
 
-.Arbeid-på-Skulen {
-  position: absolute;
-  top: 30%; /* Samme høyde som bildet */
-  left: 0%; /* Plasserer boksen 50px til høyre for bildet */
-  transform: translateY(-50%); /* Justerer boksen vertikalt */
-  width: 300px;
-  padding: 20px;
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about-me-box ul {
+.about-me-box ul, .about-me-box2 ul {
   list-style-type: square;
   padding-left: 20px;
 }
-.container {
-  position: relative; /* Gjør at elementene i containeren kan posisjoneres */
-  width: 100%;
-  height: auto;
-}
 
+/* Responsiv design for mobil */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;    /* Skifter fra rad til kolonne på mobil */
-    justify-content: center;   /* Sentraliserer elementene vertikalt */
-    align-items: center;
-    height: auto;              /* Automatisk høyde for innhold */
+    flex-direction: column; /* Stabler bildet og tekstboksen vertikalt */
+    align-items: center; /* Sentraliserer innholdet */
+    max-width: 100%; /* Fjerner maks bredde */
   }
 
-  .custom-image, .custom-image2, .about-me-box,.about-me-box2 {
-    max-width: 60%;            /* Bildet og tekstboksen tar nesten hele skjermbredden på mobil */
-    margin-bottom: 20px;       /* Liten avstand mellom elementene */
+  .custom-image, .custom-image2 {
+    width: 80%; /* Bilde tar opp mesteparten av bredden på små skjermer */
+    margin-right: 0; /* Ingen avstand på små skjermer */
+  }
+
+  .about-me-box, .about-me-box2 {
+    max-width: 90%; /* Tekstboksene tilpasser seg skjermbredden */
+    width: 100%;
+    text-align: center; /* Sentraliserer teksten */
   }
 }
+
 /* Hovedstyling */
 .school-work-section {
   padding: 20px;
