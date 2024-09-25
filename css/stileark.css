@@ -131,7 +131,7 @@ ul {list-style-type: square;
   text-align: center;
 }
 .body2 {
-  background-image: url("Images/grass.jpg"); 
+  background-image: url("../Images/grass.jpg"); 
   background-size: cover;
    
 }  
@@ -313,13 +313,21 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  color: #04AA6D; /* Bruk en farge som passer til temaet */
+  color: #04AA6D;
   margin-bottom: 15px;
 }
 
 p {
   font-size: 1em;
   color: #666;
+}
+
+/* Bildene under hvert kort */
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-top: 15px; /* Litt avstand mellom teksten og bildet */
+  border-radius: 5px;
 }
 
 /* Responsiv tilpasning */
