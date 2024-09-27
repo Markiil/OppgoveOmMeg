@@ -9,15 +9,24 @@
 <body class ="body2">
 
 
-    <div class="box2">
-        <a href="testforindex2.html" class="button3">Om Meg /</a>
-        <a href="testforindex.html" class="button3">Kunnskap ////</a>
-        <a href="testforindex.html" class="button3">Arbeid På Skulen ////</a>
-        <a href="testforindex.html" class="button3">CV ////</a>
-        <a href="testforindex.html" class="button3">Documentasjon ////</a>
-        
-    </div>
+  <div class="box2">
+    <a href="testforindex2.html" class="button3">Om Meg /</a>
+    <a href="testforindex.html" class="button3">Kunnskap ////</a>
+    <a href="testforindex.html" class="button3">Arbeid På Skulen ////</a>
+    <a href="testforindex.html" class="button3">CV ////</a>
+    <a href="testforindex.html" class="button3">Documentasjon ////</a>
     
+</div>
+    <div id="menu-container"></div>
+    <script>
+      // Last inn menyen fra menu.html
+      fetch('menu.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('menu-container').innerHTML = data;
+          });
+  </script>
+
 
 </body>
 

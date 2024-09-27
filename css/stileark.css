@@ -336,3 +336,65 @@ p {
     flex-direction: column; /* På små skjermer blir kortene stablet vertikalt */
   }
 }
+
+
+
+/* ///////////////////////////////////////////// */
+
+
+/* Stil for menyikon */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000; /* Sørg for at den vises over alt annet */
+}
+
+/* Skjul selve checkboxen */
+#menu-toggle {
+  display: none;
+}
+
+/* Side-meny som er skjult som standard */
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Åpner menyen når checkbox er sjekket */
+#menu-toggle:checked ~ .side-nav {
+  width: 250px;
+}
+
+/* Hovedinnholdet forskyves når menyen åpnes */
+#menu-toggle:checked ~ .main-content {
+  margin-left: 250px;
+  transition: margin-left 0.5s;
+}
