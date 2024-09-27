@@ -345,6 +345,7 @@ p {
 /* Stil for menyikon */
 .menu-icon {
   font-size: 30px;
+  color:black;
   cursor: pointer;
   position: fixed;
   top: 20px;
@@ -396,5 +397,10 @@ p {
 /* Hovedinnholdet forskyves når menyen åpnes */
 #menu-toggle:checked ~ .main-content {
   margin-left: 250px;
-  transition: margin-left 0.5s;
+  transition: margin-left 0.3s;
+}
+
+.h3{
+  font-size: 0;
+color: lightblue;
 }
