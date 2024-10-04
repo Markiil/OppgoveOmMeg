@@ -201,3 +201,13 @@ p {
   font-size: 0;
 color: rgb(13, 15, 15);
 }
+
+
+.mail-icon {
+  position: absolute;
+  top: 20px;    /* Plasserer ikonet 10px fra toppen av skjermen */
+  right: 40px;  /* Plasserer ikonet 10px fra høyre kant av skjermen */
+  width: 42px;
+  height: 42px;
+  cursor: pointer; /* Gjør ikonet klikkbart */
+}
