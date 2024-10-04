@@ -68,7 +68,7 @@ body {
 
 /* Hovedstyling */
 .school-work-section {
-  padding: 20px;
+  padding:20px;
   background-color: #f9f9f9;
   text-align: center;
 }
@@ -110,7 +110,7 @@ h3 {
 
 p {
   font-size: 1em;
-  color: #666;
+  color: #000000;
 }
 
 
@@ -139,7 +139,7 @@ p {
   color:black;
   cursor: pointer;
   position: fixed;
-  top: 20px;
+  top: 30px;
   left: 20px;
   z-index: 1000; /* Sørg for at den vises over alt annet */
 }
@@ -191,23 +191,132 @@ p {
   transition: margin-left 0.3s;
 }
 .main-content {
-  position: relative;
-  top: 50px; /* Flytter elementet 100px nedover */
-  color: #111;
+  flex: 1; /* Tvinger innholdet til å fylle det tilgjengelige rommet */
+  padding: 20px;
 }
 
 .h4{
   
-  font-size: 0;
+  font-size: 12;
 color: rgb(13, 15, 15);
 }
 
 
 .mail-icon {
-  position: absolute;
-  top: 20px;    /* Plasserer ikonet 10px fra toppen av skjermen */
+  position: fixed;
+  top: 30px;    /* Plasserer ikonet 10px fra toppen av skjermen */
   right: 40px;  /* Plasserer ikonet 10px fra høyre kant av skjermen */
   width: 42px;
   height: 42px;
   cursor: pointer; /* Gjør ikonet klikkbart */
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////7 */
+
+
+/* Hovedstyling */
+.Om-Meg-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Kortene (cards) */
+.subject-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Sentrerer kortene */
+}
+
+.card2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+  font-size: 1.5em;
+  color: #04AA6D;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1em;
+  color: #000000;
+}
+
+
+/* Bildene under hvert kort */
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-top: 25px; /* Litt avstand mellom teksten og bildet */
+  border-radius: 5px;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 768px) {
+  .subject-cards {
+    flex-direction: column; /* På små skjermer blir kortene stablet vertikalt */
+  }
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////7 */
+
+
+/* Footer styling */
+.footer {
+  background-color: #000; /* Svart bakgrunn på footer */
+  color: #fff; /* Hvit tekst */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff; /* Hvite linker */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+
+html, body {
+  height: 100%; /* Sørger for at body dekker hele høyden på vinduet */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
