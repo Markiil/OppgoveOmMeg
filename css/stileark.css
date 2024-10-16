@@ -160,6 +160,7 @@ p {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  z-index: 500;
 }
 
 .side-nav ul {
@@ -193,6 +194,7 @@ p {
 .main-content {
   flex: 1; /* Tvinger innholdet til å fylle det tilgjengelige rommet */
   padding: 20px;
+  text-align: center;
 }
 
 .h4{
@@ -242,7 +244,7 @@ h2 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 250px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -289,7 +291,7 @@ p {
   color: #fff; /* Hvit tekst */
   padding: 20px;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 
 .footer-links {
@@ -314,9 +316,47 @@ p {
 }
 
 
-html, body {
+html {
   height: 100%; /* Sørger for at body dekker hele høyden på vinduet */
   margin: 0;
   display: flex;
   flex-direction: column;
 }
+
+
+/* Seksjon som dekker hele skjermen med bakgrunnsbilde */
+.fullscreen-section {
+  background-image: url('../Images/Øyane.jpg'); /* Bytt ut med stien til ditt bilde */
+  background-size: cover; /* Bildet dekker hele skjermen */
+  background-position: center; /* Sentrerer bildet */
+  background-repeat: no-repeat; /* Hindrer at bildet gjentar seg */
+  height: 100vh; /* Seksjonen dekker 100% av skjermhøyden */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* For å gjøre tekst synlig over bildet */
+  text-align: center;
+}
+
+/* Styling for innholdet under bakgrunnsbildet */
+.content-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.h6 {
+  margin: 0;
+  padding: 10px;
+}
+
+.p6 {
+  margin: 0;
+  padding: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
