@@ -345,6 +345,11 @@ html {
   color: #333;
 }
 
+h7 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
 .h6 {
   margin: 0;
   padding: 10px;
