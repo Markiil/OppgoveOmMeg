@@ -123,11 +123,22 @@ p {
 }
 
 /* Responsiv tilpasning */
+/* For screens smaller than 768px, stack the cards vertically */
 @media (max-width: 768px) {
   .subject-cards {
-    flex-direction: column; /* På små skjermer blir kortene stablet vertikalt */
+    flex-direction: column; /* Stabler kortene vertikalt */
   }
 }
+
+/* For screens smaller than 480px, also stack cards vertically (or make any other adjustments) */
+@media (max-width: 480px) {
+  .subject-cards {
+    flex-direction: column; /* Stabler kortene vertikalt */
+  }
+
+  /* You can add more styles here for even smaller screens if needed */
+}
+
 
 
 
@@ -161,6 +172,7 @@ p {
   transition: 0.5s;
   padding-top: 60px;
   z-index: 500;
+  opacity: 0.8;
 }
 
 .side-nav ul {
@@ -209,6 +221,7 @@ color: rgb(13, 15, 15);
   height: 42px; /* Størrelse på ikonet */
   vertical-align: middle; /* Justerer ikonet vertikalt med teksten */
   margin-top: 10px; /* Litt avstand fra teksten */
+  
 }
 
 
@@ -277,6 +290,7 @@ p {
 @media (max-width: 768px) {
   .subject-cards {
     flex-direction: column; /* På små skjermer blir kortene stablet vertikalt */
+  
   }
 }
 
