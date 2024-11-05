@@ -26,16 +26,79 @@
 
  
 
-    <div class="container">
-        <img src="../Images/ markii2.jpg" alt="meg" class="custom-image2">
-        <div class="about-me-box2">
+    <div class="school-work-section">
+      <h2>Arbeid På Skulen</h2>
         
-          <ul>
-            <li>jijwaoirjawi waiu rhuiawr uiawbr iawbi ubawr huar oiwahr iuawhr iuahiru ahwiurh awihr waiuhriu ahriuwah riuwahriu awhiur hawuih siud iwuahas ihiau dw</li>
-            
-          </ul>
+      <div class="subject-cards">
+          
+        <div class="card">
+            <h3>Teknologi Forståelse</h3>
+            <p>Lær av bruk av  prinsipper innen teknologi og deres anvendelse i hverdagen.</p>
+            <img src="../Images/Photoshop.jpg" alt="Teknologi bilde" class="card-image">
         </div>
+        
+        <div class="card">
+          <h3>Konsept Utvikling og Programmering</h3>
+          <p>Utvikling av nettsider ved hjelp av HTML for struktur og CSS for design og layout.</p>
+          <img src="../Images/HTMLBILDE.jpg" alt="Programmering bilde" class="card-image">
+        </div>
+        
+        <div class="card">
+          <h3>Yrkesfaglig Fordypning</h3>
+          <p>Praktisk erfaring: Utplassert ved Bergen Offentlige Bibliotek.</p>
+          <img src="../Images/YFFBILDE.jpg" alt="Yrkesfag bilde" class="card-image">
+        </div>
+        
+        <div class="card">
+          <h3>Produksjon og Historiefortelling</h3>
+          <p>Lær å skape bilder av høy kvalitet</p>
+          <img src="../Images/CAMERA.jpg" alt="Produksjon bilde" class="card-image">
+        </div>
+  
+        <div class="card">
+          <h3>Produksjon og Historiefortelling</h3>
+          <p>Lær å skape bilder av høy kvalitet</p>
+          <img src="../Images/CAMERA.jpg" alt="Produksjon bilde" class="card-image">
+        </div>
+  
+        <div class="card">
+          <h3>Produksjon og Historiefortelling</h3>
+          <p>Lær å skape bilder av høy kvalitet</p>
+          <img src="../Images/CAMERA.jpg" alt="Produksjon bilde" class="card-image">
+        </div>
+  
       </div>
+    </div>
+
+
+    <label for="tall1">Tall 1:</label>
+    <input type="number" id="tall1">
+
+    <label for="tall2">Tall 2:</label>
+    <input type="number" id="tall2">
+
+    <!-- Knapp for å utføre summeringen -->
+    <button onclick="plussTall()">Pluss sammen tallene</button>
+
+    <!-- Område for resultatet -->
+    <div id="resultat">Resultatet vil vises her.</div>
+
+    <script>
+        // JavaScript-funksjon som summerer tallene og viser resultatet
+        function plussTall() {
+            // Hent verdiene fra inndatafeltene og konverter dem til tall
+            var tall1 = parseFloat(document.getElementById("tall1").value);
+            var tall2 = parseFloat(document.getElementById("tall2").value);
+
+            // Summerer tallene
+            var sum = tall1 + tall2;
+
+            // Viser resultatet i 'resultat'-elementet
+            document.getElementById("resultat").innerHTML = "Summen er: " + sum;
+        }
+    </script>
+        
+
 
 
       <footer class="footer">
@@ -52,5 +115,6 @@
         </p>
       </footer>
       
-      
+
+
 </body>

@@ -378,3 +378,83 @@ body {
   padding: 0;
 }
 
+
+
+
+
+
+
+
+
+
+/* Hovedstyling */
+.school-work-section4 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Kortene (cards) */
+.subject-cards4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: center; /* Sentrerer kortene */
+}
+
+.card5 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+h3 {
+  font-size: 1.5em;
+  color: #04AA6D;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1em;
+  color: #000000;
+}
+
+
+/* Bildene under hvert kort */
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-top: 15px; /* Litt avstand mellom teksten og bildet */
+  border-radius: 5px;
+}
+
+/* Responsiv tilpasning */
+/* For screens smaller than 768px, stack the cards vertically */
+@media (max-width: 768px) {
+  .subject-cards {
+    flex-direction: column; /* Stabler kortene vertikalt */
+  }
+}
+
+/* For screens smaller than 480px, also stack cards vertically (or make any other adjustments) */
+@media (max-width: 480px) {
+  .subject-cards {
+    flex-direction: column; /* Stabler kortene vertikalt */
+  }
+
+  /* You can add more styles here for even smaller screens if needed */
+}
+
+
