@@ -66,78 +66,6 @@ body {
 
 
 
-/* Hovedstyling */
-.school-work-section {
-  padding:20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.5em;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-/* Kortene (cards) */
-.subject-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center; /* Sentrerer kortene */
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-h3 {
-  font-size: 1.5em;
-  color: #04AA6D;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 1em;
-  color: #000000;
-}
-
-
-/* Bildene under hvert kort */
-.card-image {
-  width: 100%;
-  height: auto;
-  margin-top: 15px; /* Litt avstand mellom teksten og bildet */
-  border-radius: 5px;
-}
-
-/* Responsiv tilpasning */
-/* For screens smaller than 768px, stack the cards vertically */
-@media (max-width: 768px) {
-  .subject-cards {
-    flex-direction: column; /* Stabler kortene vertikalt */
-  }
-}
-
-/* For screens smaller than 480px, also stack cards vertically (or make any other adjustments) */
-@media (max-width: 480px) {
-  .subject-cards {
-    flex-direction: column; /* Stabler kortene vertikalt */
-  }
-
-  /* You can add more styles here for even smaller screens if needed */
-}
 
 
 
@@ -457,4 +385,147 @@ p {
   /* You can add more styles here for even smaller screens if needed */
 }
 
+/* Modal styling */
+/* Modal styling */
 
+
+/* Hovedstyling */
+.school-work-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Kortene (cards) */
+.subject-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #04AA6D;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1em;
+  color: #000000;
+}
+
+/* Bildene under hvert kort */
+.card-image {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 768px) {
+  .subject-cards {
+    flex-direction: column;
+  }
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 80vh; /* Begrens høyden til 80% av visningsområdet */
+  overflow-y: auto; /* Legger til rulling når innholdet overskrider høyden */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 2em;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Endret bilde styling for større bilder i modal */
+.modal-image {
+  width: auto;
+  height: auto;
+  max-height: 600px; /* Begrens maksimal høyde for bilder */
+  object-fit: contain; /* Sørger for at bildet fyller plassen uten å bli kuttet */
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Styling for navigasjonspiler */
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  color: #333;
+  cursor: pointer;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  color: #04AA6D;
+}

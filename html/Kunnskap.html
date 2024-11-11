@@ -27,79 +27,65 @@
  
 
     <div class="school-work-section">
-      <h2>Arbeid På Skulen</h2>
-        
+      <h2>Kunnskap</h2>
+    
       <div class="subject-cards">
-          
-        <div class="card">
-            <h3>Teknologi Forståelse</h3>
-            <p>Lær av bruk av  prinsipper innen teknologi og deres anvendelse i hverdagen.</p>
-            <img src="../Images/Photoshop.jpg" alt="Teknologi bilde" class="card-image">
+        <div class="card" onclick="openModal(0)">
+          <h3>Electrofag</h3>
+          <p>Elektrofag, kunnskap om Electrical</p>
+          <img src="../Images/Electrical.jpg" alt="Teknologi bilde" class="card-image">
         </div>
-        
-        <div class="card">
-          <h3>Konsept Utvikling og Programmering</h3>
-          <p>Utvikling av nettsider ved hjelp av HTML for struktur og CSS for design og layout.</p>
-          <img src="../Images/HTMLBILDE.jpg" alt="Programmering bilde" class="card-image">
+    
+        <div class="card" onclick="openModal(1)">
+          <h3>Dronebygging</h3>
+          <p>ogabooga</p>
+          <img src="../Images/Drone.jpeg" alt="Programmering bilde" class="card-image">
         </div>
-        
-        <div class="card">
-          <h3>Yrkesfaglig Fordypning</h3>
-          <p>Praktisk erfaring: Utplassert ved Bergen Offentlige Bibliotek.</p>
-          <img src="../Images/YFFBILDE.jpg" alt="Yrkesfag bilde" class="card-image">
+    
+        <div class="card" onclick="openModal(2)">
+          <h3>Komponenter</h3>
+          <p>Kunnskap om Lodding, forståelse av komponenter</p>
+          <img src="../Images/circuit.jpeg" alt="Yrkesfag bilde" class="card-image">
         </div>
-        
-        <div class="card">
-          <h3>Produksjon og Historiefortelling</h3>
-          <p>Lær å skape bilder av høy kvalitet</p>
-          <img src="../Images/CAMERA.jpg" alt="Produksjon bilde" class="card-image">
+    
+        <div class="card" onclick="openModal(3)">
+          <h3>3D Modellering</h3>
+          <p>Bruk av Freecad til å produsere 3D Modeller</p>
+          <img src="../Images/Freecad.jpg" alt="Produksjon bilde" class="card-image">
         </div>
-  
-        <div class="card">
-          <h3>Produksjon og Historiefortelling</h3>
-          <p>Lær å skape bilder av høy kvalitet</p>
-          <img src="../Images/CAMERA.jpg" alt="Produksjon bilde" class="card-image">
+    
+        <div class="card" onclick="openModal(4)">
+          <h3>Arduino</h3>
+          <p>Bruk, og Kobling av Arduino</p>
+          <img src="../Images/Arduino.jpeg" alt="Produksjon bilde" class="card-image">
         </div>
-  
-        <div class="card">
-          <h3>Produksjon og Historiefortelling</h3>
-          <p>Lær å skape bilder av høy kvalitet</p>
-          <img src="../Images/CAMERA.jpg" alt="Produksjon bilde" class="card-image">
+    
+        <div class="card" onclick="openModal(5)">
+          <h3>Vis eg treng meir </h3>
+          <p>^</p>
+          <img src="../Images/CAMERA a.jpg" alt="Produksjon bilde" class="card-image">
         </div>
-  
       </div>
     </div>
-
-
-    <label for="tall1">Tall 1:</label>
-    <input type="number" id="tall1">
-
-    <label for="tall2">Tall 2:</label>
-    <input type="number" id="tall2">
-
-    <!-- Knapp for å utføre summeringen -->
-    <button onclick="plussTall()">Pluss sammen tallene</button>
-
-    <!-- Område for resultatet -->
-    <div id="resultat">Resultatet vil vises her.</div>
-
-    <script>
-        // JavaScript-funksjon som summerer tallene og viser resultatet
-        function plussTall() {
-            // Hent verdiene fra inndatafeltene og konverter dem til tall
-            var tall1 = parseFloat(document.getElementById("tall1").value);
-            var tall2 = parseFloat(document.getElementById("tall2").value);
-
-            // Summerer tallene
-            var sum = tall1 + tall2;
-
-            // Viser resultatet i 'resultat'-elementet
-            document.getElementById("resultat").innerHTML = "Summen er: " + sum;
-        }
-    </script>
-        
-
-
+    
+    <!-- Modal for displaying the selected card in detail -->
+    <div id="modal" class="modal" tabindex="0">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+    
+        <div id="modal-title"></div>
+        <div id="modal-description"></div>
+        <img id="modal-image" src="" alt="Modal image" class="modal-image">
+    
+        <!-- Piles for navigating images -->
+        <div class="arrow left" onclick="navigateCard('prev')">&#10094;</div>
+        <div class="arrow right" onclick="navigateCard('next')">&#10095;</div>
+      </div>
+    </div>
+    
+    <!-- Import JavaScript -->
+    <script src="../Scripts/script.js"></script>
+    
 
       <footer class="footer">
         <div class="footer-links">
