@@ -106,7 +106,12 @@ document.addEventListener("keydown", function (event) {
             navigateCard('prev');
         } else if (event.key === "ArrowRight") {
             navigateCard('next');
-        } else if (event.key === "Escape") {
+        } else if (event.key === "A") {
+            navigateCard('prev');
+        } else if (event.key === "D") {
+            navigateCard('next');
+           
+        }  else if (event.key === "Escape") {
             closeModal();  // Lukker modalen ved Escape-tast
         }
     }
