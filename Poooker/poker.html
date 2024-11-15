@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Hold'em Poker</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Texas Hold'em Poker</h1>
+        <button id="deal-start">Start spill</button>
+
+        <div class="money-info">
+            <p>Din saldo: <span id="player-money">1000</span> kr</p>
+            <p>Motstanderens saldo: <span id="opponent-money">1000</span> kr</p>
+            <p>Potten: <span id="pot">0</span> kr</p>
+        </div>
+
+        <div class="player-hand">
+            <h2>Dine kort</h2>
+            <div id="player-cards" class="cards"></div>
+        </div>
+
+        <div class="opponent-hand">
+            <h2>Motstanderens kort</h2>
+            <div id="opponent-cards" class="cards"></div>
+        </div>
+
+        <div class="table-cards">
+            <h2>Bordkort</h2>
+            <div id="community-cards" class="cards"></div>
+        </div>
+
+        <div class="action-buttons">
+            <input type="number" id="bet-amount" placeholder="Sats beløp" min="10">
+            <button id="bet-button">Bet</button>
+            <button id="stand-button">Stand</button>
+        </div>
+        
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
