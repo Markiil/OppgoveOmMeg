@@ -30,7 +30,7 @@ const cards = [
         images: [
             "../Images/Freecad.jpg",
             "../Images/Freecad2.jpg",
-            "../Images/Freecad3.jpg"
+            "../Images/freecad3.jpg"
         ]
     },
     {
@@ -39,7 +39,7 @@ const cards = [
         images: [
             "../Images/Arduino.jpeg",
             "../Images/Arduino2.jpeg",
-            "../Images/Arduino3.jpeg"
+            "../Images/arduino3.jpeg"
         ]
     },
     {
