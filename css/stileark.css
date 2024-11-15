@@ -145,8 +145,8 @@ color: rgb(13, 15, 15);
 
 
 .mail-icon {
-  width: 42px; /* Størrelse på ikonet */
-  height: 42px; /* Størrelse på ikonet */
+ /*  width: 42px; /* Størrelse på ikonet */
+ /*  height: 42px; /* Størrelse på ikonet */
   vertical-align: middle; /* Justerer ikonet vertikalt med teksten */
   margin-top: 10px; /* Litt avstand fra teksten */
   
