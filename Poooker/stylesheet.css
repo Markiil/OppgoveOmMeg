@@ -19,6 +19,61 @@ body {
     gap: 10px;
     margin-top: 10px;
 }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #40574b;
+    color: #000000;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card {
+    width: 60px;
+    height: 80px;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card.red {
+    color: red;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Legger til stil for saldo og potten */
+.money-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
 
 .card {
     width: 60px;

@@ -64,6 +64,9 @@ function displayHand(hand, elementId) {
     hand.forEach(card => {
         const cardDiv = document.createElement('div');
         cardDiv.className = 'card';
+        if (card.suit === '♥' || card.suit === '♦') {
+            cardDiv.classList.add('red');
+        }
         cardDiv.innerText = `${card.rank} ${card.suit}`;
         container.appendChild(cardDiv);
     });
