@@ -76,11 +76,11 @@ function displayHand(hand, elementId) {
 function bet() {
     const betAmount = parseInt(document.getElementById("bet-amount").value);
     if (isNaN(betAmount) || betAmount <= 0) {
-        alert("Vennligst angi et gyldig beløp for innsats.");
+        alert("Vennligst angi et gyldig beløp");
         return;
     }
     if (betAmount > playerMoney) {
-        alert("Du har ikke nok penger for denne innsatsen.");
+        alert("Du er fattig.");
         return;
     }
 
