@@ -72,71 +72,6 @@ body {
 
 
 
-/* Stil for menyikon */
-.menu-icon {
-  font-size: 30px;
-  color:black;
-  cursor: pointer;
-  position: fixed;
-  top: 30px;
-  left: 20px;
-  z-index: 1000; /* Sørg for at den vises over alt annet */
-}
-
-/* Skjul selve checkboxen */
-#menu-toggle {
-  display: none;
-}
-
-/* Side-meny som er skjult som standard */
-.side-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  z-index: 500;
-  opacity: 0.8;
-}
-
-.side-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.side-nav ul li a {
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.side-nav ul li a:hover {
-  background-color: #575757;
-}
-
-/* Åpner menyen når checkbox er sjekket */
-#menu-toggle:checked ~ .side-nav {
-  width: 250px;
-}
-
-/* Hovedinnholdet forskyves når menyen åpnes */
-#menu-toggle:checked ~ .main-content {
-  margin-left: 250px;
-  transition: margin-left 0.3s;
-}
-.main-content {
-  flex: 1; /* Tvinger innholdet til å fylle det tilgjengelige rommet */
-  padding: 20px;
-  text-align: center;
-}
-
 .h4{
   
   font-size: 12;
@@ -171,13 +106,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* Kortene (cards) */
-.subject-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center; /* Sentrerer kortene */
-}
 
 .card2 {
   background-color: #fff;
@@ -223,38 +151,7 @@ p {
 }
 
 
-/* ////////////////////////////////////////////////////////////////////////////////7 */
 
-
-/* Footer styling */
-.footer {
-  background-color: #000; /* Svart bakgrunn på footer */
-  color: #fff; /* Hvit tekst */
-  padding: 20px;
-  text-align: center;
-  width: auto;
-}
-
-.footer-links {
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: #fff; /* Hvite linker */
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer p {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #bbb;
-}
 
 
 html {
@@ -328,7 +225,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* Kortene (cards) */
+
 .subject-cards4 {
   display: flex;
   flex-wrap: wrap;
@@ -382,11 +279,9 @@ p {
     flex-direction: column; /* Stabler kortene vertikalt */
   }
 
-  /* You can add more styles here for even smaller screens if needed */
+ 
 }
 
-/* Modal styling */
-/* Modal styling */
 
 
 /* Hovedstyling */
@@ -452,80 +347,3 @@ p {
   }
 }
 
-/* Modal styling */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 900px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 80vh; /* Begrens høyden til 80% av visningsområdet */
-  overflow-y: auto; /* Legger til rulling når innholdet overskrider høyden */
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 2em;
-  color: #aaa;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Endret bilde styling for større bilder i modal */
-.modal-image {
-  width: auto;
-  height: auto;
-  max-height: 600px; /* Begrens maksimal høyde for bilder */
-  object-fit: contain; /* Sørger for at bildet fyller plassen uten å bli kuttet */
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-/* Styling for navigasjonspiler */
-.arrow {
-  position: absolute;
-  top: 50%;
-  font-size: 2em;
-  color: #333;
-  cursor: pointer;
-  transform: translateY(-50%);
-  padding: 5px 10px;
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-.arrow:hover {
-  color: #04AA6D;
-}

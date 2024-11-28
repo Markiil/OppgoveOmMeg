@@ -1,0 +1,98 @@
+/* Stil for menyikon */
+.menu-icon {
+    font-size: 30px;
+    color:black;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    z-index: 1000; /* Sørg for at den vises over alt annet */
+  }
+  
+  /* Skjul selve checkboxen */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Side-meny som er skjult som standard */
+  .side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 500;
+    opacity: 0.8;
+  }
+  
+  .side-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-nav ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .side-nav ul li a:hover {
+    background-color: #575757;
+  }
+  
+  /* Åpner menyen når checkbox er sjekket */
+  #menu-toggle:checked ~ .side-nav {
+    width: 250px;
+  }
+  
+  /* Hovedinnholdet forskyves når menyen åpnes */
+  #menu-toggle:checked ~ .main-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+  }
+  .main-content {
+    flex: 1; /* Tvinger innholdet til å fylle det tilgjengelige rommet */
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  /* ////////////////////////////////////////////////////////////////////////////////7 */
+
+
+/* Footer styling */
+.footer {
+    background-color: #000; /* Svart bakgrunn på footer */
+    color: #fff; /* Hvit tekst */
+    padding: 20px;
+    text-align: center;
+    width: auto;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #fff; /* Hvite linker */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #bbb;
+  }
