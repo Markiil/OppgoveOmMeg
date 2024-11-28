@@ -347,3 +347,37 @@ p {
   }
 }
 
+
+
+
+
+
+
+
+/* Tabell styling */
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-family: Arial, sans-serif;
+}
+
+.log-table th, .log-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.log-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.log-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.log-table tr:hover {
+  background-color: #ddd;
+}
