@@ -381,3 +381,53 @@ p {
 .log-table tr:hover {
   background-color: #ddd;
 }
+
+
+
+
+
+
+
+
+
+
+/* Kontaktseksjon */
+.kontakt-container {
+  background-color: white; /* Hele bakgrunnen er hvit */
+  padding: 40px 20px; /* Innvendig mellomrom for lesbarhet */
+  display: flex;
+  justify-content: center; /* Sentrerer seksjonen horisontalt */
+  align-items: center; /* Sentrerer vertikalt om nødvendig */
+  min-height: 100vh; /* Fyller hele høyden på skjermen */
+}
+
+.kontakt {
+  background-color: white; /* Sikrer hvit bakgrunn for innholdet */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Begrenser bredden på innholdet */
+  width: 90%; /* Responsiv bredde */
+}
+
+.kontakt h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.kontakt p {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: left; /* Venstrejustert tekst */
+}
+
+.kontakt a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.kontakt a:hover {
+  text-decoration: underline;
+}
