@@ -170,3 +170,15 @@ function determineWinner(playerResult, opponentResult) {
     if (opponentRank > playerRank) return "opponent";
     return "tie";
 }
+
+
+
+// Hent alle chips og legg til en klikk-lytter
+document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', function () {
+        const chipValue = parseInt(this.dataset.value);
+        const betInput = document.getElementById('bet-amount');
+        const currentBet = parseInt(betInput.value) || 0; // Sett til 0 hvis feltet er tomt
+        betInput.value = currentBet + chipValue; // Legger til verdien
+    });
+});

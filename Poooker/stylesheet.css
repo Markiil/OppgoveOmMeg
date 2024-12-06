@@ -56,8 +56,8 @@ button {
 }
 
 .card {
-    width: 120px;
-    height: 160px;
+    width: 80px;
+    height: 120px;
     background-color: #ffffff;
     color: #000;
     display: flex;
@@ -83,4 +83,33 @@ button {
 .money-info {
     margin-top: 20px;
     font-size: 1.2em;
+}
+
+
+
+
+.chip-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chip {
+    width: 60px;
+    height: 60px;
+    background-color: #ffcc00; /* Fallback farge */
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.chip:hover {
+    transform: scale(1.1);
 }

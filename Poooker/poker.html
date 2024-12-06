@@ -6,30 +6,22 @@
     <title>Texas Hold'em Poker</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="../css/Menu.css">
-    
 </head>
 <body>
+    <!-- Burgerknapp -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
 
- <!-- Burgerknapp -->
- <input type="checkbox" id="menu-toggle">
- <label for="menu-toggle" class="menu-icon">☰</label>
-
- <!-- Sidemeny -->
- <nav id="side-menu" class="side-nav">
-   <ul>
-
-     <li><a href="../index.html">Startside</a></li>
-     <li><a href="../html/ArbeidPåSkulen.html">Om Meg</a></li>
-     <li><a href="../html/Kunnskap.html">Kunnskap</a></li>
-     <li><a href="../html/Logg.html">Logg</a></li>
-     <li><a href="../html/OmMeg.html">Poker</a></li>
- 
-
-   </ul>
- </nav>
-
-
-
+    <!-- Sidemeny -->
+    <nav id="side-menu" class="side-nav">
+        <ul>
+            <li><a href="../index.html">Startside</a></li>
+            <li><a href="../html/ArbeidPåSkulen.html">Om Meg</a></li>
+            <li><a href="../html/Kunnskap.html">Kunnskap</a></li>
+            <li><a href="../html/Logg.html">Logg</a></li>
+            <li><a href="../html/OmMeg.html">Poker</a></li>
+        </ul>
+    </nav>
 
     <div class="game-container">
         <h1>Texas Hold'em Poker</h1>
@@ -61,10 +53,20 @@
             <button id="bet-button">Bet</button>
             <button id="stand-button">Stand</button>
         </div>
+
+        <!-- Klikkbare chips -->
+        <div class="chip-container">
+            <button class="chip" data-value="10" style="background-image: url(../Images/chip2.png);"></button>
+            <button class="chip" data-value="50" style="background-image: url(../Images/chip3grønn.png);"></button>
+            <button class="chip" data-value="100" style="background-image: url(../Images/chip4Rød.png);"></button>
+            <button class="chip" data-value="500" style="background-image: url(../Images/chip4svart.png);"></button>
+        </div>
         
+
         <div id="result" class="result"></div>
+        <button id="deal-start">Spill Igjen</button>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
