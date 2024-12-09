@@ -8,39 +8,36 @@
     <link rel="stylesheet" href="../css/Menu.css">
 </head>
 <body>
-    <!-- Burgerknapp -->
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">☰</label>
 
-    <!-- Sidemeny -->
-    <nav id="side-menu" class="side-nav">
-        <ul>
-            <li><a href="../index.html">Startside</a></li>
-            <li><a href="../html/ArbeidPåSkulen.html">Om Meg</a></li>
-            <li><a href="../html/Kunnskap.html">Kunnskap</a></li>
-            <li><a href="../html/Logg.html">Logg</a></li>
-            <li><a href="../html/OmMeg.html">Poker</a></li>
-        </ul>
-    </nav>
+ <!-- Burgerknapp -->
+ <input type="checkbox" id="menu-toggle">
+ <label for="menu-toggle" class="menu-icon">☰</label>
 
-    <div class="game-container">
-        <h1>Texas Hold'em Poker</h1>
-        <button id="deal-start">Start spill</button>
+ <!-- Sidemeny -->
+ <nav id="side-menu" class="side-nav">
+   <ul>
+     <li><a href="../index.html">Startside</a></li>
+     <li><a href="../html/ArbeidPåSkulen.html">Om Meg</a></li>
+     <li><a href="../html/Kunnskap.html">Kunnskap</a></li>
+     <li><a href="../html/Logg.html">Logg</a></li>
+     <li><a href="../html/OmMeg.html">Poker</a></li>
+   </ul>
+ </nav>
 
-        <div class="money-info">
-            <p>Din saldo: <span id="player-money">1000</span> kr</p>
-            <p>Motstanderens saldo: <span id="opponent-money">1000</span> kr</p>
-            <p>Potten: <span id="pot">0</span> kr</p>
-        </div>
+<div class="game-container">
+    <h1>Texas Hold'em Poker</h1>
+    <button id="deal-start">Start spill</button>
 
+    <div class="money-info">
+        <p>Din saldo: <span id="player-money">1000</span> kr</p>
+        <p>Motstanderens saldo: <span id="opponent-money">1000</span> kr</p>
+        <p>Potten: <span id="pot">0</span> kr</p>
+    </div>
+
+    <div class="game-layout">
         <div class="player-hand">
             <h2>Dine kort</h2>
             <div id="player-cards" class="cards"></div>
-        </div>
-
-        <div class="opponent-hand">
-            <h2>Motstanderens kort</h2>
-            <div id="opponent-cards" class="cards"></div>
         </div>
 
         <div class="table-cards">
@@ -48,25 +45,33 @@
             <div id="community-cards" class="cards"></div>
         </div>
 
-        <div class="action-buttons">
+        <div class="opponent-hand">
+            <h2>Motstanderens kort</h2>
+            <div id="opponent-cards" class="cards"></div>
+        </div>
+
+
+        
+        <div class="betting">
+            <h2>Innsats</h2>
             <input type="number" id="bet-amount" placeholder="Sats beløp" min="10">
             <button id="bet-button">Bet</button>
             <button id="stand-button">Stand</button>
         </div>
 
-        <!-- Klikkbare chips -->
-        <div class="chip-container">
-            <button class="chip" data-value="10" style="background-image: url(../Images/chip2.png);"></button>
-            <button class="chip" data-value="50" style="background-image: url(../Images/chip3grønn.png);"></button>
-            <button class="chip" data-value="100" style="background-image: url(../Images/chip4Rød.png);"></button>
-            <button class="chip" data-value="500" style="background-image: url(../Images/chip4svart.png);"></button>
-        </div>
-        
 
-        <div id="result" class="result"></div>
-        <button id="deal-start">Spill Igjen</button>
     </div>
+  <!-- Klikkbare chips -->
+  <div class="chip-container">
+    <button class="chip" data-value="10" style="background-image: url(../Images/chip2.png);"></button>
+    <button class="chip" data-value="50" style="background-image: url(../Images/chip3grønn.png);"></button>
+    <button class="chip" data-value="100" style="background-image: url(../Images/chip4Rød.png);"></button>
+    <button class="chip" data-value="500" style="background-image: url(../Images/chip4svart.png);"></button>
+</div>
+    <div id="result" class="result"></div>
+    
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

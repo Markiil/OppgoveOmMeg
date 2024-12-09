@@ -4,21 +4,21 @@ const cards = [
         title: "Electrofag",
         images: [
             { src: "../Images/Electrical.jpg", desc: "Kobling av Elektriske Apparater" },
-            { src: "../Images/Electrical2.jpg", desc: "Montering av utstyr" },
-            { src: "../Images/Electrical3.jpg", desc: "Teikning av skisser" }
+            { src: "../Images/Electrical2.jpg", desc: "Montering av utstyr, bruk av riktig verktøy, korrekt tilkobling samt beregning av strøm og spenning. Evne til å utføre oppgaver nøyaktig og i tråd med tekniske spesifikasjoner." },
+            { src: "../Images/Electrical3.jpg", desc: "Tegning, lesing og montering basert på skisser. Evne til å tolke og bruke skisser for å utføre oppgaver presist og effektivt." }
         ]
     },
     {
         title: "Dronebygging",
         images: [
-            { src: "../Images/Drone.jpeg", desc: "Bygging av droner" },
+            { src: "../Images/Drone.jpeg", desc: "Bygging av droner, vektberegning, programmering, og montering. Kompetanse i å kombinere teknisk presisjon og programmeringsferdigheter for å skape funksjonelle og effektive droner." },
             { src: "../Images/Drone2.jpeg", desc: "Ferdig Koblet drone" }
         ]
     },
     {
         title: "Komponenter",
         images: [
-            { src: "../Images/circuit.jpeg", desc: "Lodding og kobling av komponenter" }
+            { src: "../Images/circuit.jpeg", desc: "Lodding og kobling av komponenter, presis montering, og riktig bruk av loddebolt med korrekt temperatur for å unngå skade på ulike komponenter. Solid kunnskap om komponentenes egenskaper og funksjoner." }
         ]
     },
     {
@@ -33,16 +33,11 @@ const cards = [
         title: "Arduino",
         images: [
             { src: "../Images/Arduino.jpeg", desc: "Arduino-prosjektkoblinger" },
-            { src: "../Images/Arduino2.jpeg", desc: "Programmering av Arduino" },
-            { src: "../Images/Arduino3.jpg", desc: "Testing av Arduino-systemer" }
+            { src: "../Images/Arduino2.jpeg", desc: "Programmering av Arduino, Enkelt 3 LED program med Varierende Lys Styrker" },
+            { src: "../Images/Arduino3.jpg", desc: "Testing av Arduino-systemer og Måling av Temperatur" }
         ]
     },
-    {
-        title: "yap yap yap",
-        images: [
-            { src: "../Images/CAMERA.jpg", desc: "Bildeproduksjon og historiefortelling" }
-        ]
-    }
+    
 ];
 
 let currentCardIndex = 0; // Index for current card

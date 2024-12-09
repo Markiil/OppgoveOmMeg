@@ -23,7 +23,7 @@ function startGame() {
     communityCards = [];
     round = 0;
     pot = 0;
-    
+
     updateMoney();
     displayHand(playerHand, "player-cards");
     displayHand([], "opponent-cards");
@@ -170,8 +170,6 @@ function determineWinner(playerResult, opponentResult) {
     if (opponentRank > playerRank) return "opponent";
     return "tie";
 }
-
-
 
 // Hent alle chips og legg til en klikk-lytter
 document.querySelectorAll('.chip').forEach(chip => {
