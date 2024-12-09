@@ -4,7 +4,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #40574b;
+    background-image: url('../Images/Pokertable.jpg');
+    background-repeat: no-repeat;  
+    background-size: cover;        
+    background-position: center;   
     color: #000000;
     margin: 0;
 }
