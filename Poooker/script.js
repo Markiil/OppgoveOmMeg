@@ -29,6 +29,9 @@ function startGame() {
     displayHand([], "opponent-cards");
     document.getElementById("community-cards").innerHTML = '';
     document.getElementById("result").innerText = '';
+
+    // Aktiver bet-knappen igjen når et nytt spill starter
+    document.getElementById("bet-button").disabled = false;
 }
 
 // Oppdater visning av penger
@@ -121,21 +124,38 @@ function showResult() {
     let resultText = `Din hånd: ${playerResult} | Motstanderens hånd: ${opponentResult}`;
     const winner = determineWinner(playerResult, opponentResult);
 
+    let winnerText = '';
     if (winner === "player") {
         playerMoney += pot;
         resultText += " - Du vinner!";
+        winnerText = "Du vinner!";
     } else if (winner === "opponent") {
         opponentMoney += pot;
         resultText += " - Motstanderen vinner!";
+        winnerText = "Motstanderen vinner!";
     } else {
         playerMoney += pot / 2;
         opponentMoney += pot / 2;
         resultText += " - Uavgjort!";
+        winnerText = "Uavgjort!";
     }
 
     pot = 0;
     updateMoney();
     document.getElementById("result").innerText = resultText;
+
+    // Vis vinnerbeskjeden midt på skjermen
+    const winnerMessage = document.getElementById("winner-message");
+    winnerMessage.innerText = winnerText;
+    winnerMessage.style.display = "block"; // Vis beskjed
+
+    // Deaktiver satsing etter at runden er over
+    document.getElementById("bet-button").disabled = true; // Deaktiver satsingsknappen
+
+    // Skjul vinnerbeskjeden etter noen sekunder
+    setTimeout(() => {
+        winnerMessage.style.display = "none";
+    }, 3000); // Skjul etter 3 sekunder
 }
 
 // Enkel håndsammenligning

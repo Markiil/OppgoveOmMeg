@@ -103,3 +103,18 @@ button {
 .chip:hover {
     transform: scale(1.1);
 }
+
+/* CSS for vinnerbeskjed */
+#winner-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff; /* Hvit tekst */
+    background-color: rgba(0, 0, 0, 0.7); /* Halvtransparent bakgrunn */
+    padding: 20px;
+    border-radius: 10px;
+    display: none; /* Skjult som standard */
+}
