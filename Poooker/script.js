@@ -2,6 +2,8 @@ document.getElementById("deal-start").addEventListener("click", startGame);
 document.getElementById("bet-button").addEventListener("click", bet);
 document.getElementById("stand-button").addEventListener("click", stand);
 
+
+//lege til Kortene
 const suits = ['♠', '♥', '♦', '♣'];
 const ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 let deck = [];
@@ -30,7 +32,7 @@ function startGame() {
     document.getElementById("community-cards").innerHTML = '';
     document.getElementById("result").innerText = '';
 
-    // Aktiver bet-knappen igjen når et nytt spill starter
+    
     document.getElementById("bet-button").disabled = false;
 }
 
