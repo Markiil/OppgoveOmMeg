@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="../css/stileark.css">
   <link rel="stylesheet" href="../css/Menu.css">
+  <link rel="stylesheet" href="../css/Modal.css">
 </head>
 
 <body>
@@ -33,25 +34,25 @@
       
     <div class="subject-cards">
         
-      <div class="card">
+      <div class="card" onclick="openModal(0)">
           <h3>Teknologi forståelse</h3>
           <p>Lær av bruk av  prinsipper innen teknologi og deres anvendelse i hverdagen.</p>
           <img src="../Images/Photoshop.jpg" alt="Teknologi bilde" class="card-image">
       </div>
       
-      <div class="card">
+      <div class="card" onclick="openModal(1)">
         <h3>Konsept utvikling og programmering</h3>
         <p>Utvikling av nettsider ved hjelp av HTML for struktur og CSS for design og layout.</p>
         <img src="../Images/HTMLBILDE.jpg" alt="Programmering bilde" class="card-image">
       </div>
       
-      <div class="card">
+      <div class="card" onclick="openModal(2)">
         <h3>Yrkesfaglig fordypning</h3>
         <p>Praktisk erfaring: Utplassert ved Bergen Offentlige Bibliotek.</p>
         <img src="../Images/YFFBILDE.jpg" alt="Yrkesfag bilde" class="card-image">
       </div>
       
-      <div class="card">
+      <div class="card" onclick="openModal(3)">
         <h3>Produksjon og historiefortelling</h3>
         <p>Lær å skape bilder av høy kvalitet</p>
         <img src="../Images/CAMERA.jpg" alt="Produksjon bilde" class="card-image">
@@ -60,6 +61,26 @@
     </div>
   </div>
   
+  <div id="modal" class="modal" tabindex="0">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+  
+      <div id="modal-title"></div>
+      <div id="modal-description"></div>
+      <img id="modal-image" src="" alt="Modal image" class="modal-image">
+  
+    
+      <div class="arrow left" onclick="navigateCard('prev')">&#10094;</div>
+      <div class="arrow right" onclick="navigateCard('next')">&#10095;</div>
+    </div>
+  </div>
+  
+
+  <script src="../Scripts/scriptArbeid.js"></script>
+
+
+
+
   <footer class="footer">
     <div class="footer-links">
       <a href="../Images/Documentasjon documentcopy.pdf">Documentasjon</a>
