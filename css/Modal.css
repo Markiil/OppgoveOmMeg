@@ -47,7 +47,7 @@
   .modal-image {
     width: auto;
     height: auto;
-    max-height: 600px; /* Begrens maksimal høyde for bilder */
+    max-height: 600px; 
     object-fit: contain; /* Sørger for at bildet fyller plassen uten å bli kuttet */
     margin-top: 20px;
     border-radius: 5px;

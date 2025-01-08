@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bærekraftig Avfall</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bærekraft og Avfall</h1>
+    </header>
+
+    <!-- Form for data input -->
+    <section>
+        <h2>Legg inn avfallsdata</h2>
+        <form id="data-form">
+            <label for="day">Dag:</label>
+            <input type="text" id="day" placeholder="F.eks. Mandag" required>
+            <label for="waste">Avfall (kg):</label>
+            <input type="number" id="waste" placeholder="F.eks. 2.5" required>
+            <button type="submit">Legg til</button>
+        </form>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Dag</th>
+                    <th>Avfall (kg)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Chart display -->
+    <section>
+        <h2>Graf over innsamlet data</h2>
+        <canvas id="wasteChart"></canvas>
+    </section>
+
+    <!-- Quiz section -->
+    <section>
+        <h2>Kunnskapstest: Hvor god er du på sortering?</h2>
+        <div id="quiz-container">
+            <p id="quiz-question">Her kommer spørsmålene.</p>
+            <button class="quiz-option" data-answer="true">Ja</button>
+            <button class="quiz-option" data-answer="false">Nei</button>
+        </div>
+        <p id="quiz-feedback"></p>
+    </section>
+</body>
+</html>

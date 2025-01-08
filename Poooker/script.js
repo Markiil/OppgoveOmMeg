@@ -85,7 +85,7 @@ function bet() {
         return;
     }
     if (betAmount > playerMoney) {
-        alert("Du er fattig.");
+        alert("Vennligst angi et gyldig beløp");
         return;
     }
 
